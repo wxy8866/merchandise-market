@@ -1,8 +1,13 @@
 # merchandise-market
-Spring SpringMVC SpringSecurity MyBatis logback log4j Maven
+SpringIO Spring SpringMVC SpringSecurity MyBatis MyBatisGenerator logback log4j Maven
+Freemarker JUnit
 
-front-end freemarker are implemented by Netease MOOC team.
+Web front-end resources including freemarker are implemented by Netease MOOC team.
 
 id:wxy8866
 
 demo: www.wxy8866.com:8080/
+
+login: 
+buyer/reyub
+seller/relles
