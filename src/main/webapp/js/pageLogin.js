@@ -17,7 +17,7 @@
 					loading.show();
 					ajax({
                         data:{userName:value1,password:value2},
-                        url:'/api/login',
+                        url: 'api/login',
                         success:function(result){
                             loading.hide();
                             // location.href = '/';
@@ -30,12 +30,12 @@
                     $.ajax({
                         type: "POST",
                         data:{userName:value1,password:value2},
-                        url:'/login',
+                        url:'login',
                         success:function(data,status,message){
                             loading.hide();
                             if(!data)
                             {
-                                location.href = '/';
+                                location.href = request.getContextPath() + '/';
                             }
                             else
 							{

@@ -33,7 +33,7 @@
                 </#if>
                 <#if user && user.usertype==1>
                     <span class="buyprice">已卖出：${product.saleNum} 件</span>
-                <a href="/edit?id=${product.id}" class="u-btn u-btn-primary">编 辑</a>
+                <a href="${rca.getContextPath()}/edit?id=${product.id}" class="u-btn u-btn-primary">编 辑</a>
                 </#if>
             </div>
         </div>
@@ -47,7 +47,7 @@
     </#if>
 </div>
 <#include "include/footer.ftl">
-<script type="text/javascript" src="/js/global.js"></script>
-<script type="text/javascript" src="/js/pageShow.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/pageShow.js"></script>
 </body>
 </html>

@@ -57,6 +57,7 @@
                     <property name="prefix" value=""/>
                     <property name="suffix" value=".ftl"/>
                     <property name="contentType" value="text/html; charset=utf-8"/>
+                    <property name="requestContextAttribute" value="rca"/>
                 </bean>
             </list>
         </property>

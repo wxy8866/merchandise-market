@@ -46,7 +46,7 @@ public class LoginLogoutController
         if (principal != null)
         {
             logger.debug("user is already loggon return landing apge");
-            response.sendRedirect("/");
+            response.sendRedirect(request.getContextPath() + "/");
         } else
         {
             logger.debug("user has not logged in return login page");

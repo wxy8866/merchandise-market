@@ -144,9 +144,16 @@ public class AsynchronousAPIController
         {
             try
             {
-                filePath = request.getSession().getServletContext().getRealPath("/") + "upload/"
-                        + file.getOriginalFilename();
-                logger.debug("saved file path is {}", file);
+                String folderPath = request.getSession().getServletContext().getRealPath("/") + "upload/";
+
+                filePath = folderPath + file.getOriginalFilename();
+                logger.debug("saved file path is {}", filePath);
+
+                if(!new File(folderPath).exists())
+                {
+                    new File(folderPath).mkdir();
+                }
+
                 file.transferTo(new File(filePath));
             } catch (IOException e)
             {
